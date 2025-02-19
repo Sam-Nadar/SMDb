@@ -21,9 +21,10 @@ export default function Navbar({ setActiveTab }: NavbarProps) {
     <nav className="flex justify-between items-center px-5 py-4 bg-[##0d111c]/50 backdrop-blur-lg w-full z-50">
        {/* Left - Logo  */}
       <Logo/>
-
+      {/* sm:gap-6 */}
+      {/* sm:mr-10 md:mr-15 lg:mr-20 */}
       {/* Right - Nav Links  */}
-      <div className="flex gap-6">
+      <div className="flex gap-6 md:gap-12 md:mr-15 lg:mr-20">
         <button 
           className={`${activeTab === "movies" ? "text-indigo-400" : ""} hover:text-gray-400 transition`} 
           onClick={() => handleTabClick("movies")}
